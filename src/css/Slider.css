@@ -38,3 +38,13 @@
 .slider-title {
     padding: 0 0 10px;
 }
+
+@media (max-width: 760px) {
+    .slider, .slider-flipped, .slider-in-view, .slider-flipped-in-view{
+        flex-direction: column;
+    }
+
+    .slider-image {
+        width: 100%;
+    }
+}
