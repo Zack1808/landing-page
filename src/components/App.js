@@ -18,7 +18,7 @@ const App = () => {
     <div>
       <Hero imageSrc={img1} title="Travel made simple." />
       <Slider imageSrc={img2} title="Be an explorer!" subtitle="Our platform offers a wide variety of unique locations!" />
-      <Slider imageSrc={img1} title="Be an explorer!" subtitle="Our platform offers a wide variety of unique locations!" flipped />
+      <Slider imageSrc={img1} title="Memories for a lifetime!" subtitle="Your dream vacation is only a few clicks away!" flipped />
     </div>
   )
 }
