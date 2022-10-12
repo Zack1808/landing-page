@@ -19,7 +19,7 @@ const Navbar = ({ navbarLinks}) => {
             <span className="logo">Travel</span>
             {toggleMenu ? <FiX size={25} className="navbar-icon" onClick={onMenuToggle} /> : <FiMenu size={25} className="navbar-icon" onClick={onMenuToggle} />}
             <ul className={`navbar-list ${toggleMenu && "navbar-list-active"}`}>{navbarLinks.map(navlink => {
-                return <li className='navbar-item'>
+                return <li className='navbar-item' key={navlink.title}>
                     <a href={navlink.url}>{navlink.title}</a>
                 </li>
             })}</ul>
