@@ -8,7 +8,7 @@ import '../css/Slider.css';
 const Slider = ({ imageSrc, title, subtitle, flipped }) => {
 
     const { ref, inView } = useInView({
-        threshold: 0.4,
+        threshold: 0.3,
     })
 
     return (

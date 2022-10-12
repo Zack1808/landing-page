@@ -5,7 +5,7 @@
     width: 100%;
     opacity: 0;
     transform: scale(85%);
-    transition: 2s;
+    transition: 1.2s;
 }
 
 .slider-in-view, .slider-flipped-in-view {
@@ -15,7 +15,7 @@
     width: 100%;
     opacity: 1;
     transform: scale(100%);
-    transition: 2s;
+    transition: 1.2s;
 }
 
 .slider-flipped, .slider-flipped-in-view {
