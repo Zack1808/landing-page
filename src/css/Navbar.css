@@ -39,3 +39,53 @@
     border-color: #fff;
     transition: .25s
 }
+
+.navbar-icon {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 760px) {
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        transform: scale(1, 0);
+        transform-origin: top;
+        background-color: rgba(0,0,0,.7);
+        transition: all .5s;
+    }
+
+    .navbar-list-active{
+        transform: scale(1, 1);
+    }
+
+    .navbar-item{
+        padding: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .navbar-list-active .navbar-item {
+        opacity: 1;
+        transition: .1s
+    }
+
+    .navbar-item a {
+        border-width: 0;
+    }
+
+    .navbar-icon {
+        display: block
+    }
+}
